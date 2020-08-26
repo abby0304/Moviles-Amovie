@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".PeliculaContenido" android:orientation="vertical">
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="Detalles"
+                    android:textSize="24sp" />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:orientation="horizontal"
+                    android:paddingBottom="20dp">
+
+                <ImageView
+                        android:id="@+id/iv_Portada"
+                        android:layout_width="178dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        app:srcCompat="@drawable/a1" />
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:id="@+id/txt_Titulo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingTop="10dp"
+                            android:text="El payaso eso"
+                            android:textColor="#E0A92F"
+                            android:textSize="24sp" />
+
+                    <TextView
+                            android:id="@+id/txt_fecha"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingTop="5dp"
+                            android:text="Fecha"
+                            android:textSize="18sp" />
+
+                    <TextView
+                            android:id="@+id/txt_director"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingTop="5dp"
+                            android:text="Director"
+                            android:textSize="18sp" />
+
+                    <TextView
+                            android:id="@+id/txt_Pais"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingTop="5dp"
+                            android:text="Pais"
+                            android:textSize="18sp" />
+
+                    <TextView
+                            android:id="@+id/txt_sinopsis"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingTop="5dp"
+                            android:text="sinopsis"
+                            android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                    android:id="@+id/btn_play"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Play" />
+
+            <TextView
+                    android:text="Comentarios"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textView" android:textSize="18sp"
+                    android:paddingTop="20dp" android:gravity="center" android:paddingBottom="20dp"/>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/tv_comentario" android:layout_weight="1" android:hint="Escribe tu comentario"/>
+                <Button
+                        android:text="Agregar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/btn_agregar" android:layout_weight="1"/>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_Comentarios"
+                    android:layout_width="match_parent"
+                    android:layout_height="276dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Amovie</string>
+    <string name="facebook_app_id">398217244440597</string>
+    <string name="fb_login_protocol_scheme">fb398217244440597</string>
+
+    <string name="data_txt_registro">Registro de Usuario</string>
+    <string name="data_txt_correo">Correo Electronico</string>
+    <string name="data_txt_username">Usuario</string>
+    <string name="data_txt_contra">Contraseña</string>
+    <string name="data_btn_aceptar">Aceptar</string>
+
+</resources>
